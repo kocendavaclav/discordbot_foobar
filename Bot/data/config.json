@@ -1,0 +1,14 @@
+{
+	"client": {
+		"token": "Nzk0OTUwMTI2NTUxOTU3NTA0.GHwt0o.TkPaw-bVw5JfVlM4Q-HOCdZqKBKudNzozN3YfA",
+		"id": "794950126551957504",
+		"defaultColor": "#FFFFFF"
+	},
+	"db": {
+		"host": "store5.rosti.cz",
+		"port":"3306",
+		"database": "vendakoc_2417",
+		"user": "vendakoc_2417",
+		"password": "P2x5sCXWT86bZpW"
+	}
+}

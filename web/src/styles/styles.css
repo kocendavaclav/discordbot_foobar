@@ -1,0 +1,207 @@
+.dashboardNavbar ul li {
+  float: left;
+}
+.games {
+  flex-direction: row;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboardNavbar {
+  position: sticky;
+  top: 0px;
+  padding: 8px;
+  background-color: #111;
+  text-align: center;
+  z-index: 5;
+}
+.logout {
+  float: right;
+}
+.header {
+  background-color: #0d0e11;
+}
+.row.games {
+  background-color: #191b20;
+  min-height: 82vh;
+}
+.addGame {
+  float: right;
+}
+.addGameInput {
+  font-weight: bold;
+  font-size: large;
+  padding: 0px 8px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 8px;
+  width: 5vw;
+  height: 4vh;
+  min-width: 100px;
+}
+.dashboardSave {
+  min-width: fit-content;
+  float: right;
+  width: 8vw;
+}
+.selectTextChannel {
+  float: left;
+}
+.textChannelDropdown {
+  margin: 10px;
+  height: 3vh;
+  font-size: 2vh;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+.followGameButton {
+  color: white;
+  background-color: darkgreen;
+  border-radius: 20px;
+  padding: 8px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+}
+.alertText {
+  color: red;
+}
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #282c34;
+}
+.loginInput {
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: large;
+  padding: 0px 8px;
+  text-align: center;
+}
+.login {
+  align-items: center;
+  justify-content: center;
+}
+.dashboardSaveBar {
+  position: fixed;
+  bottom: 0px;
+  height: 6vh;
+  background-color: #111;
+  align-items: center;
+  justify-content: center;
+}
+.gameCardOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gameCardOverlay:hover {
+  opacity: 1;
+}
+.gameCard {
+  position: relative;
+  border-radius: 8px;
+  height: fit-content;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+.gameCardImg {
+  border-radius: 8px;
+  opacity: 1;
+}
+.dashboardScreen {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #191b20;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+}
+.button {
+  border-radius: 8px;
+  background-color: #61dafb;
+  font-weight: bold;
+  font-size: large;
+  height: 40px;
+  min-width: fit-content;
+}
+.button.switchScreen {
+  float: left;
+  min-height: 100%;
+}
+.login {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 4px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

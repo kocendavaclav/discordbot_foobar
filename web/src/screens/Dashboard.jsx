@@ -22,7 +22,7 @@ function Dashboard(props) {
       };
       try {
         const response = await axios.post(
-          "http://mpsdb.xyz:3001/api/textchannels",
+          "http://localhost:3001/api/textchannels",
           data
         );
         if (response.data.error) {
@@ -40,7 +40,7 @@ function Dashboard(props) {
 
   async function getGames() {
     try {
-      const response = await axios.post("http://mpsdb.xyz:3001/api/getgame");
+      const response = await axios.post("http://localhost:3001/api/getgame");
       if (response.data.error) {
         console.error(response.data.error);
         return;
@@ -52,13 +52,13 @@ function Dashboard(props) {
       console.error(err);
     }
   }
-  async function getSettings() {
+  /*  async function getSettings() {
     const data = {
       guildId: props.guildId,
     };
     try {
       const response = await axios.post(
-        "http://mpsdb.xyz:3001/api/getsettigns",
+        "http://localhost:3001/api/getsettigns",
         data
       );
       if (response.data.error) {
@@ -73,7 +73,7 @@ function Dashboard(props) {
     } catch (err) {
       console.error(err);
     }
-  }
+  } */
 
   async function submitChanges() {
     if (typeof textChannel === "undefined") {
@@ -86,7 +86,7 @@ function Dashboard(props) {
     };
     try {
       const response = await axios.post(
-        "http://mpsdb.xyz:3001/api/submitchanges",
+        "http://localhost:3001/api/submitchanges",
         data
       );
       if (response.data.error) {
@@ -110,10 +110,7 @@ function Dashboard(props) {
       id: addGame,
     };
     try {
-      const response = await axios.post(
-        "http://mpsdb.xyz:3001/api/game",
-        data
-      );
+      const response = await axios.post("http://localhost:3001/api/game", data);
       if (response.data.error) {
         console.error(response.data.error);
         return;

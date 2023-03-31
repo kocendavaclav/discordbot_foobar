@@ -33,7 +33,7 @@ function LoginForm(props) {
     };
     try {
       const response = await axios.post(
-        "http://mpsdb.xyz:3001/api/login",
+        "http://localhost:3001/api/login",
         data
       );
       if (response.data.error) {

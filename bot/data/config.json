@@ -1,0 +1,13 @@
+{
+	"client": {
+		"token": "",
+		"defaultColor": "#FFFFFF"
+	},
+	"db": {
+		"host": "",
+		"port":"",
+		"database": "",
+		"user": "",
+		"password": ""
+	}
+}
